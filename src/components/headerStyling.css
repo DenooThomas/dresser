@@ -1,0 +1,13 @@
+.header-cont {
+    width: 100%;
+    height: 75px;
+    background-color: #28282B;
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.header-option {
+    padding: 20px;
+    color: #FAF9F6;
+}
