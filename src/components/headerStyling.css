@@ -3,6 +3,7 @@
     height: 75px;
     background-color: #28282B;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
     align-items: center;
 }

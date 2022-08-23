@@ -1,0 +1,26 @@
+.person-cont {
+    flex-basis: 30%;
+    height: 75vh;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #28282b6e;
+    border-radius: 8px;
+}
+
+.person-option-cont {
+    width: 150px;
+    height: 150x;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-img {
+    height: 150px;
+    object-fit: cover;
+}
