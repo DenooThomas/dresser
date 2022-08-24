@@ -3,7 +3,7 @@ import { useContext } from "react"
 
 import { ClothingContext } from "../context/ClothingContext"
 
-import "./headerStyling.css"
+import "./headerStyling/headerStyling.css"
 
 export default function Header(){
     const {cart} = useContext(ClothingContext)

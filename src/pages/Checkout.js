@@ -64,8 +64,7 @@ export default function Checkout(){
             </React.Fragment>
             :
             <React.Fragment>
-                <h1 className="card-title">Your order has been received and will be delivered shortly!</h1>
-                <p>Check your e-mail for further information regarding your order.</p>
+                <h1>Yorick ge stinkt muuuuug nr kak</h1>
             </React.Fragment>} 
         </div>
     )

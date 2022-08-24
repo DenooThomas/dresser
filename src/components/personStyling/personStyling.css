@@ -1,0 +1,27 @@
+.person-cont {
+  flex-basis: 30%;
+  height: 75vh;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(40, 40, 43, 0.431372549);
+  border-radius: 8px;
+}
+
+.person-option-cont {
+  width: 150px;
+  height: 150x;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=personStyling.css.map */

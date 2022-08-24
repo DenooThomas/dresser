@@ -1,4 +1,4 @@
-import "./clothingCardStyling.css"
+import "./clothingCardStyling/clothingCardStyling.css"
 import { ClothingContext } from "../context/ClothingContext"
 import React, { useContext } from "react"
 

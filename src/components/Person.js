@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
 import { ClothingContext } from "../context/ClothingContext";
-import "./personStyling.css"
+import "./personStyling/personStyling.css"
 
 export default function Person(){
     const {person} = useContext(ClothingContext)
