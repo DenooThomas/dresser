@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 import Person from "../components/Person"
-import "./dresserStyling.css"
+import "./dresserStyling/dresserStyling.css"
 import ClothingCard from "../components/ClothingCard"
 
 export default function Dresser(){

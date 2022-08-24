@@ -1,0 +1,16 @@
+.dresser-cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selector-cont {
+  flex-basis: 60%;
+  height: 75vh;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+.selector-title {
+  padding: 10px 10px 10px 0;
+}/*# sourceMappingURL=dresserStyling.css.map */

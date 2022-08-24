@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import ClothingCard from "../components/ClothingCard"
 
-import "./confirmationStyling.css"
+import "./confirmationStyling/confirmationStyling.css"
 import { ClothingContext } from "../context/ClothingContext"
 import { useContext } from "react"
 
@@ -9,6 +9,7 @@ export default function Confirmation(){
 
     const {addToCart, getPersonIDs} = useContext(ClothingContext)
 
+    
     return (
         <div className="confirm-cont">
             <div className="confirm-selector-cont">

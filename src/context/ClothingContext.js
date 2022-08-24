@@ -27,6 +27,7 @@ function ClothingContextProvider(props){
         IDs.push(person.upperbody.id)
         IDs.push(person.lowerbody.id)
         IDs.push(person.shoes.id)
+        
         return IDs
     }
 

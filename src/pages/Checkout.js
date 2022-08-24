@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import ClothingCard from "../components/ClothingCard";
 
 import { ClothingContext } from "../context/ClothingContext";
-import "./checkoutStyling.css"
+import "./checkoutStyling/checkoutStyling.css"
 
 export default function Checkout(){
     const {clearCart} = useContext(ClothingContext)

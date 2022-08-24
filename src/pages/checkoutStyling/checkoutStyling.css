@@ -1,0 +1,35 @@
+.checkout-cont {
+  display: flex;
+}
+
+.submitted {
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkout-card-cont {
+  flex-basis: 60%;
+}
+
+.form-cont {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 50px;
+  flex-basis: 40%;
+  padding: 0 100px;
+}
+
+.form-text-cont {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.form-button-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=checkoutStyling.css.map */
