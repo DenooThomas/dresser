@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 import Person from "../components/Person"
 import "./dresserStyling/dresserStyling.css"
-import ClothingCard from "../components/ClothingCard"
+import ClothingCardGen from "../components/ClothingCardGen"
 
 export default function Dresser(){
 
@@ -10,11 +10,11 @@ export default function Dresser(){
         <div className="dresser-cont">
             <div className="selector-cont">
                 <h2 className="selector-title">Upper body</h2>
-                <ClothingCard cardType="dresser" category="upperbody"/>
+                <ClothingCardGen cardType="dresser" category="upperbody"/>
                 <h2 className="selector-title">Lower body</h2>
-                <ClothingCard cardType="dresser" category="lowerbody"/>
+                <ClothingCardGen cardType="dresser" category="lowerbody"/>
                 <h2 className="selector-title">Shoes</h2>
-                <ClothingCard cardType="dresser" category="shoes"/>
+                <ClothingCardGen cardType="dresser" category="shoes"/>
             </div>
             <div className="person-cont">
                 <div>

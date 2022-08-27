@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import ClothingCard from "../components/ClothingCard";
+import ClothingCardGen from "../components/ClothingCardGen";
 
 import { ClothingContext } from "../context/ClothingContext";
 import "./checkoutStyling/checkoutStyling.css"
@@ -24,7 +24,7 @@ export default function Checkout(){
         {!isSubmitted ?
         <React.Fragment>
             <div className="checkout-card-cont">
-                <ClothingCard cardType="checkout"/>
+                <ClothingCardGen cardType="checkout"/>
             </div> 
             <form onSubmit={handleSubmit} className="form-cont">
                 <label htmlFor="firstName">First name:</label>
@@ -64,7 +64,8 @@ export default function Checkout(){
             </React.Fragment>
             :
             <React.Fragment>
-                <h1>Yorick ge stinkt muuuuug nr kak</h1>
+                <h1>Order placed</h1>
+                <p>Check your e-mail for further instructions regarding the delivery of your package.</p>
             </React.Fragment>} 
         </div>
     )
