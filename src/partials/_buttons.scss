@@ -1,0 +1,25 @@
+@mixin defaultButton {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 10px 20px;
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #19323c75;
+    border-radius: 8px;
+    transition: all 0.2s ease-out;
+    box-sizing: content-box;
+    transition: all 0.2s ease-out;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+} 
+
+@mixin defaultButtonHover {
+    color: $white;
+    background-color: $red;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.4), 2px 2px 5px 0px rgba(0,0,0,0.25) inset;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.4), 2px 2px 5px 0px rgba(0,0,0,0.25) inset;
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.4), 2px 2px 5px 0px rgba(0,0,0,0.25) inset;
+}

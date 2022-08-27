@@ -84,6 +84,19 @@ function ClothingContextProvider(props){
         setCart([])
     }
 
+    function getTotalPrice(){
+        let totalPrice = 0
+        cart.map(id => {
+            clothingData.map(clothingObj => {
+                if(clothingObj.id === id){
+                    return totalPrice = totalPrice + parseInt(clothingObj.price)
+                }
+            })
+            return null
+        })
+        return totalPrice
+    }
+        
     return (
         <ClothingContext.Provider value={{
             person, 
@@ -94,7 +107,8 @@ function ClothingContextProvider(props){
             cart,
             addToCart,
             removeFromCart,
-            clearCart
+            clearCart,
+            getTotalPrice
             }}>
             {props.children}
         </ClothingContext.Provider>

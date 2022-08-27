@@ -1,34 +1,22 @@
-@mixin Flexer($direction, $wrap, $justify, $align) {
-    display: flex;
-    flex-flow: $direction $wrap;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-@mixin FlexRow($wrap, $justify, $align){
-    display: flex;
-    flex-flow: row $wrap;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-@mixin FlexColumn($wrap, $justify, $align){
-    display: flex;
-    flex-flow: column $wrap;
-    justify-content: $justify;
-    align-items: $align;
-}
+@import "../../partials/colors";
+@import "../../partials/flexer";
+@import "../../partials/buttons";
 
 $cardHeight: 100px;
 
 .card-cont {
-    width: 100%;
+    min-width: 500px;
     height: $cardHeight;
-    padding: 20px 0;
-    border-bottom: 1px solid #28282b79;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 8px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
 }
 
 .card-option-cont {
@@ -56,19 +44,10 @@ $cardHeight: 100px;
 }
 
 .card-button {
-    padding: 10px 20px;
-    width: auto;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    border: 1px solid #36454F;
-    transition: all 0.2s ease-out;
-    box-sizing: content-box;
-    transition: all 0.2s ease-out;
+    @include defaultButton;
 }
 
 .card-button:hover{
-    color: white;
-    background-color: #28282b79;
+    @include defaultButtonHover;
 }
 

@@ -1,34 +1,22 @@
-.position-apart{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
+@import "../../partials/colors";
+@import "../../partials/buttons";
 
-.confirm-cont {
-    display: flex;
-    flex-flow: column nowrap;
-}
 
 .confirm-button-cont{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    margin-top: 60px;
     
 }
 
 .confirm-button {
-    padding: 10px 20px;
-    width: auto;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 1px solid #36454F;
-    transition: all 0.2s ease-out;
-    margin: 20px 10px 0px 10px;
-    box-sizing: content-box;
+    @include defaultButton;
+    padding: 20px;
+    font-size: 1em;
 }
 
 .confirm-button:hover{
-    background-color: #28282B;
-    color: #FFFFF0;
+    @include defaultButtonHover;
 }

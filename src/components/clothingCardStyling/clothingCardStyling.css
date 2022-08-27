@@ -1,11 +1,16 @@
 .card-cont {
-  width: 100%;
+  min-width: 500px;
   height: 100px;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(40, 40, 43, 0.4745098039);
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 8px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-option-cont {
@@ -46,18 +51,27 @@
 }
 
 .card-button {
+  text-transform: uppercase;
+  font-size: 0.7em;
   padding: 10px 20px;
   width: auto;
   height: 20px;
   line-height: 20px;
   text-align: center;
-  border: 1px solid #36454F;
+  border: 1px solid rgba(25, 50, 60, 0.4588235294);
+  border-radius: 8px;
   transition: all 0.2s ease-out;
   box-sizing: content-box;
   transition: all 0.2s ease-out;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-button:hover {
-  color: white;
-  background-color: rgba(40, 40, 43, 0.4745098039);
+  color: #F3F7F0;
+  background-color: #F1414A;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
 }/*# sourceMappingURL=clothingCardStyling.css.map */

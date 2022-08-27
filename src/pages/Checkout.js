@@ -5,7 +5,7 @@ import { ClothingContext } from "../context/ClothingContext";
 import "./checkoutStyling/checkoutStyling.css"
 
 export default function Checkout(){
-    const {clearCart} = useContext(ClothingContext)
+    const {clearCart, getTotalPrice} = useContext(ClothingContext)
     const [isSubmitted, setIsSubmitted] = useState(false)
     const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -25,6 +25,7 @@ export default function Checkout(){
         <React.Fragment>
             <div className="checkout-card-cont">
                 <ClothingCardGen cardType="checkout"/>
+                <h2 className="totalPrice">Total price: ${getTotalPrice()}</h2>
             </div> 
             <form onSubmit={handleSubmit} className="form-cont">
                 <label htmlFor="firstName">First name:</label>

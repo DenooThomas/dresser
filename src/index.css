@@ -6,6 +6,7 @@
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   color: #28282B;
 }
 
@@ -32,5 +33,10 @@ a {
 }
 
 .main-cont {
-  padding: 0 20px;
+  padding: 0 60px;
+}
+
+.totalPrice {
+  padding-top: 10px;
+  text-align: right;
 }/*# sourceMappingURL=index.css.map */

@@ -5,7 +5,7 @@ import { ClothingContext } from "../context/ClothingContext";
 import ClothingCardGen from "../components/ClothingCardGen";
 
 export default function Cart(){
-    const {addToCart, getPersonIDs, cart} = useContext(ClothingContext)
+    const {addToCart, getPersonIDs, cart, getTotalPrice} = useContext(ClothingContext)
 
     return (
         <div>
@@ -13,6 +13,7 @@ export default function Cart(){
             <React.Fragment>
             <h1>Your shopping cart contains...</h1>
             <ClothingCardGen cardType="cart"/>
+            <h2 className="totalPrice">Total price: ${getTotalPrice()}</h2>
             <div className="confirm-button-cont">
                 <Link to="/checkout" onClick={() => addToCart(getPersonIDs())} className="confirm-button">Checkout</Link>
             </div>

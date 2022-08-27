@@ -1,5 +1,5 @@
 .person-cont {
-  flex-basis: 30%;
+  width: 30%;
   height: 75vh;
   padding: 20px 0;
   display: flex;
