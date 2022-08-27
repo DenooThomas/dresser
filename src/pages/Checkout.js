@@ -25,7 +25,7 @@ export default function Checkout(){
         <React.Fragment>
             <div className="checkout-card-cont">
                 <ClothingCardGen cardType="checkout"/>
-                <h2 className="totalPrice">Total price: ${getTotalPrice()}</h2>
+                <h2 className="totalPrice">Total: ${getTotalPrice()}</h2>
             </div> 
             <form onSubmit={handleSubmit} className="form-cont">
                 <label htmlFor="firstName">First name:</label>
@@ -59,13 +59,13 @@ export default function Checkout(){
                     type="address"
                 />
                 <div className="form-button-cont">
-                    <input className="confirm-button" type="submit" value={isSubmitting ? "Sending order..." : "Confirm order"}/>
+                    <input className="checkout-button" type="submit" value={isSubmitting ? "Sending order..." : "Confirm order"}/>
                 </div>  
             </form>
             </React.Fragment>
             :
             <React.Fragment>
-                <h1>Order placed</h1>
+                <h1 className="pageTitle">Order placed</h1>
                 <p>Check your e-mail for further instructions regarding the delivery of your package.</p>
             </React.Fragment>} 
         </div>

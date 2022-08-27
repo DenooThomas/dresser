@@ -32,4 +32,32 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.checkout-button {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding: 10px 20px;
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid rgba(25, 50, 60, 0.4588235294);
+  border-radius: 8px;
+  transition: all 0.2s ease-out;
+  box-sizing: content-box;
+  transition: all 0.2s ease-out;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.checkout-button:hover {
+  color: #F3F7F0;
+  background-color: #F1414A;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
 }/*# sourceMappingURL=checkoutStyling.css.map */

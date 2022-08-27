@@ -11,10 +11,11 @@ export default function Cart(){
         <div>
             {cart.length > 0 ? 
             <React.Fragment>
-            <h1>Your shopping cart contains...</h1>
+            <h1 className="pageTitle">Your shopping cart contains...</h1>
             <ClothingCardGen cardType="cart"/>
-            <h2 className="totalPrice">Total price: ${getTotalPrice()}</h2>
+            <h2 className="totalPrice">Total: ${getTotalPrice()}</h2>
             <div className="confirm-button-cont">
+                <span></span>
                 <Link to="/checkout" onClick={() => addToCart(getPersonIDs())} className="confirm-button">Checkout</Link>
             </div>
             </React.Fragment>
