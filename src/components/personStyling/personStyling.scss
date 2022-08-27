@@ -1,3 +1,5 @@
+@import "../../partials/shadows";
+
 .person-cont {
     width: 30%;
     height: 75vh;
@@ -6,8 +8,9 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #28282b6e;
+
     border-radius: 8px;
+    @include simpleShadow;
 }
 
 .person-option-cont {

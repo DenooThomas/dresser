@@ -1,6 +1,7 @@
 @import "../../partials/colors";
 @import "../../partials/flexer";
 @import "../../partials/buttons";
+@import "../../partials/shadows";
 
 $cardHeight: 100px;
 
@@ -14,9 +15,7 @@ $cardHeight: 100px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
-    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.25);
+    @include simpleShadow;
 }
 
 .card-option-cont {

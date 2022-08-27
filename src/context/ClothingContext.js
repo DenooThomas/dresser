@@ -1,11 +1,11 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 
 import ClothingData from "./clothingData";
 
 const ClothingContext = createContext()
 
 function ClothingContextProvider(props){
-    const [clothingData, setClothingData] = useState(ClothingData)
+    const [clothingData] = useState(ClothingData)
 
     const personObj = {
         upperbody: {
@@ -70,6 +70,7 @@ function ClothingContextProvider(props){
                     return [...prevCart, id]
                 })
             }
+            return null
         })
         setPerson(personObj)
     }
@@ -91,6 +92,7 @@ function ClothingContextProvider(props){
                 if(clothingObj.id === id){
                     return totalPrice = totalPrice + parseInt(clothingObj.price)
                 }
+                return null
             })
             return null
         })
