@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom"
-
 import Person from "../components/Person"
 import "./dresserStyling/dresserStyling.css"
 import ClothingCardGen from "../components/ClothingCardGen"
 
-export default function Dresser(){
+
+export default function Dresser(){ 
 
     return(
         <div className="dresser-cont">
@@ -17,10 +16,7 @@ export default function Dresser(){
                 <ClothingCardGen cardType="dresser" category="shoes"/>
             </div>
             <div className="person-cont">
-                <div>
-                    <Person />
-                </div>
-                <Link to="confirmation" className="confirm-button">Confirm selection</Link>
+                <Person />
             </div>
         </div>
     )

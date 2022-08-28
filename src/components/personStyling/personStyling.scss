@@ -1,4 +1,5 @@
 @import "../../partials/shadows";
+@import "../../partials/colors";
 
 .person-cont {
     width: 30%;
@@ -8,7 +9,7 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-
+    border: 1px solid $grey;
     border-radius: 8px;
     @include simpleShadow;
 }

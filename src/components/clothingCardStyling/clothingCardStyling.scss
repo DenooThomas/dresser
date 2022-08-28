@@ -5,12 +5,13 @@
 
 $cardHeight: 100px;
 
+
 .card-cont {
     min-width: 500px;
     height: $cardHeight;
     padding: 20px 20px;
     margin-bottom: 30px;
-    border: none;
+    border: 1px solid $grey;
     border-radius: 8px;
     display: flex;
     flex-flow: row nowrap;
@@ -19,27 +20,30 @@ $cardHeight: 100px;
 }
 
 .card-option-cont {
+    @include Flexer(row, nowrap, space-between, space-between);
+    padding: 0 20px;
     width: 100%;
-    @include Flexer(row, nowrap, space-between, space-between)
+    h3{
+        margin-bottom: 5px
+    }
 }
 
 .row-start{
-    @include FlexColumn(nowrap, space-between, flex-start)
+    @include FlexColumn(nowrap, space-between, flex-start);
 }
 
 .row-end{
-    @include FlexColumn(nowrap, space-between, flex-end)
+    @include FlexColumn(nowrap, space-between, flex-end);
 }
 
 .card-img-cont {
-    @include Flexer(row, nowrap, center, center)
+    @include Flexer(row, nowrap, center, center);
 }
 
 .card-img {
     width: 100px;
     height: $cardHeight;
     object-fit: contain;
-    padding-left: 20px;
 }
 
 .card-button {

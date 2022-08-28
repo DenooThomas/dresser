@@ -1,8 +1,10 @@
 @import "../../partials/buttons";
 @import "../../partials/colors";
+@import "../../partials/shadows";
+@import "../../partials/flexer";
 
 .checkout-cont {
-    display: flex;
+    @include FlexRow(nowrap, space-between, flex-start)
 }
 
 .submitted {
@@ -12,24 +14,34 @@
 }
 
 .checkout-card-cont {
-    flex-basis: 60%;
+    padding-top: 20px;
+
 }
 
 .form-cont{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 50px;
-    flex-basis: 40%;
-    padding: 0 100px;
+    @include FlexColumn(nowrap, flex-start, flex-start);
+    @include simpleShadow;
+    min-width: 300px;
+    padding: 20px 50px 50px 50px;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    input[type=text], input[type=email] {
+        width: 100%;
+        margin: 5px 0 15px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #D3D3D3;
+        font-size: 0.9em;
+    }
 }
 
-.form-text-cont {
-    width: 100%;
-    margin: 5px 0;
-    padding: 5px;
+.form-cont{
+    input[type=text]:focus, input[type=email]:focus{
+        border: 1px solid #b3b1b1;
+    }
 }
+
+
 
 .form-button-cont{
     width: 100%;
@@ -39,8 +51,10 @@
 
 .checkout-button{
     @include defaultButton;
-    font-size: 1em;
+    font-weight: 400;
+    
     margin-top: 20px;
+    padding: 20px 30px;
     
 }
 

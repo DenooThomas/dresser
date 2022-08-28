@@ -3,7 +3,7 @@
   height: 100px;
   padding: 20px 20px;
   margin-bottom: 30px;
-  border: none;
+  border: 1px solid #D3D3D3;
   border-radius: 8px;
   display: flex;
   flex-flow: row nowrap;
@@ -14,11 +14,15 @@
 }
 
 .card-option-cont {
-  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: space-between;
+  padding: 0 20px;
+  width: 100%;
+}
+.card-option-cont h3 {
+  margin-bottom: 5px;
 }
 
 .row-start {
@@ -47,12 +51,11 @@
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
-  padding-left: 20px;
 }
 
 .card-button {
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 10px 20px;
   width: auto;
   height: 20px;
@@ -63,15 +66,9 @@
   transition: all 0.2s ease-out;
   box-sizing: content-box;
   transition: all 0.2s ease-out;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-button:hover {
   color: #F3F7F0;
-  background-color: #F1414A;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
-  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  background-color: #375DE6;
 }/*# sourceMappingURL=clothingCardStyling.css.map */

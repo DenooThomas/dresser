@@ -86,11 +86,11 @@ function ClothingContextProvider(props){
     }
 
     function getTotalPrice(){
-        let totalPrice = 0
+        let totalPrice = 0.0
         cart.map(id => {
             clothingData.map(clothingObj => {
                 if(clothingObj.id === id){
-                    return totalPrice = totalPrice + parseInt(clothingObj.price)
+                    return totalPrice = totalPrice + parseFloat(clothingObj.price)
                 }
                 return null
             })

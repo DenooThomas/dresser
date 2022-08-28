@@ -7,7 +7,7 @@
 
 .confirm-button {
   text-transform: uppercase;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding: 10px 20px;
   width: auto;
   height: 20px;
@@ -18,17 +18,11 @@
   transition: all 0.2s ease-out;
   box-sizing: content-box;
   transition: all 0.2s ease-out;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
   padding: 20px;
   font-size: 1em;
 }
 
 .confirm-button:hover {
   color: #F3F7F0;
-  background-color: #F1414A;
-  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
-  -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
-  -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.4), 2px 2px 5px 0px rgba(0, 0, 0, 0.25) inset;
+  background-color: #375DE6;
 }/*# sourceMappingURL=confirmationStyling.css.map */

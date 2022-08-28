@@ -7,6 +7,7 @@ import Dresser from "./pages/Dresser"
 import Confirmation from "./pages/Confirmation"
 import Cart from "./pages/Cart"
 import Checkout from "./pages/Checkout"
+import Footer from "./components/Footer"
 
 export default function App() {
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/checkout" element={<Checkout />}/>
         </Routes>
     </div>
+    <Footer />
     </React.Fragment>
     
   )

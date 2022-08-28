@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { useContext } from "react"
 
 import { ClothingContext } from "../context/ClothingContext"
+import CartIcon from "../images/shopping-cart.png";
 
 import "./headerStyling/headerStyling.css"
 
@@ -15,7 +16,14 @@ export default function Header(){
                 <Link to="dresser" className="header-option">Dresser</Link>
             </div>
             <div className="header-right-cont">
-                <Link to="cart" className="header-option">{`Cart (${cart.length})`}</Link>
+                <Link to="cart">
+                    <img
+                        className="header-cart"
+                        src={CartIcon}
+                        alt="cart icon"
+                        />
+                </Link>
+                {cart.length > 0 && <p>{cart.length}</p>}
             </div>
         </nav>
     )

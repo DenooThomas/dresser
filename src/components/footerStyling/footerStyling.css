@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #19323C;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+.footer-copy {
+  color: #F3F7F0;
+  display: inline;
+}/*# sourceMappingURL=footerStyling.css.map */

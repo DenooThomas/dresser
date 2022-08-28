@@ -1,0 +1,17 @@
+@import "../../partials/colors";
+@import "../../partials/flexer";
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: $black;
+    @include FlexRow(nowrap, space-around, center);
+    margin-top: 40px;
+
+    box-sizing: border-box;
+}
+
+.footer-copy{
+    color: $white;
+    display: inline;
+}

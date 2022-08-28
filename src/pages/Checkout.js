@@ -18,50 +18,47 @@ export default function Checkout(){
             setIsSubmitting(false)
         }, 4000);
     }
+
+    const totalPrice = getTotalPrice()
         
     return (
         <div className={isSubmitted ? "checkout-cont submitted" : "checkout-cont"}>
         {!isSubmitted ?
         <React.Fragment>
-            <div className="checkout-card-cont">
-                <ClothingCardGen cardType="checkout"/>
-                <h2 className="totalPrice">Total: ${getTotalPrice()}</h2>
-            </div> 
             <form onSubmit={handleSubmit} className="form-cont">
                 <label htmlFor="firstName">First name:</label>
                 <input
-                    name="firstName"
-                    className='form-text-cont' 
+                    name="firstName" 
                     type="text"
                 />
                 <label htmlFor="lastName">Last name:</label>
                 <input
                 name="lastName"
-                className='form-text-cont' 
                 type="text"
                 />
                 <label htmlFor="email">Email address:</label>
                 <input
-                    name="email"
-                    className='form-text-cont' 
+                    name="email" 
                     type="email"
                 />
                 <label htmlFor="city">City:</label>                
                 <input
-                    name="city"
-                    className='form-text-cont' 
-                    type="city"
+                    name="city" 
+                    type="text"
                 />
                 <label htmlFor="address">Address:</label>
                 <input
-                    name="address"
-                    className='form-text-cont' 
-                    type="address"
+                    name="address" 
+                    type="text"
                 />
                 <div className="form-button-cont">
                     <input className="checkout-button" type="submit" value={isSubmitting ? "Sending order..." : "Confirm order"}/>
                 </div>  
             </form>
+            <div className="checkout-card-cont">
+                <ClothingCardGen cardType="checkout"/>
+                <h2 className="totalPrice">Total: ${totalPrice}</h2>
+            </div> 
             </React.Fragment>
             :
             <React.Fragment>

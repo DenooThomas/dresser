@@ -1,9 +1,10 @@
 @import "../../partials/colors";
+@import "../../partials/flexer";
 
 .header-cont {
     width: 100%;
     height: 75px;
-    background-color: $red;
+    background-color: $mainTheme;
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -15,4 +16,31 @@
     color: $white;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.header-right-cont{
+    @include FlexRow(nowrap, center, center);
+    width: 75px;
+    height: 75px;
+    position: relative;
+    p {
+        width: 15px;
+        height: 15px;
+        padding: 5px;
+        border: 1px solid $white;
+        border-radius: 50px;
+        background-color: $mainTheme;
+        color: $white;
+        position: absolute;
+        text-align: center;
+        line-height: 15px;
+        left: -2px;
+        top: 10px;
+    }
+}
+
+.header-cart {
+    
+    width: 45px;
+    height: 45px;
 }
