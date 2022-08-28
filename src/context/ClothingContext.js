@@ -31,6 +31,16 @@ function ClothingContextProvider(props){
         return IDs
     }
 
+    
+    function isSelected(){
+        const personIDs = getPersonIDs()
+        for(let i=0;i<personIDs.length;i++){
+            if(personIDs[i] !== ''){
+                return true
+            }
+        }
+    } 
+
     const [person, setPerson] = useState(personObj)
 
     function handleClick(id, category, img){
@@ -110,7 +120,8 @@ function ClothingContextProvider(props){
             addToCart,
             removeFromCart,
             clearCart,
-            getTotalPrice
+            getTotalPrice,
+            isSelected
             }}>
             {props.children}
         </ClothingContext.Provider>
