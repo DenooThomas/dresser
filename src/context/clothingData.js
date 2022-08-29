@@ -35,16 +35,16 @@ const clothingData = [
     {
         id: "5",
         category: "shoes",
-        title: "Herenschoenen (harry potter)",
-        description: "Avada kedavra",
+        title: "Herenschoenen",
+        description: "Dit paar camelkleurige leren kostuumschoenen, met reliëfdetails op de achterkant, is ideaal voor onder je kostuum en geeft je outfit een elegante noot.",
         price: "129.99",
         image: "https://www.torfs.be/dw/image/v2/BCQR_PRD/on/demandware.static/-/Sites-torfs-catalog-master/default/dwe0930424/hi-res/pdp/311/311016/311016-4.jpg?sw=250"
     },
     {
         id: "6",
         category: "shoes",
-        title: "Herenschoenen (marine blauw) (harry potter)",
-        description: "Blauwe pattas",
+        title: "Herenschoenen (marine blauw)",
+        description: "Kleur eens buiten de lijntjes om een klassiek kostuum te verfraaien, met dit paar glad leren schoenen.",
         price: "165.00",
         image: "https://www.torfs.be/dw/image/v2/BCQR_PRD/on/demandware.static/-/Sites-torfs-catalog-master/default/dwe46b29c5/hi-res/pdp/309/309585/309585-4.jpg?sw=250"
     },
