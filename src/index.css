@@ -50,4 +50,39 @@ a {
 
 .pageTitle {
   padding-bottom: 30px;
+}
+
+/**** HOME ****/
+.home-cont {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.home-cont p {
+  padding: 12px 15px;
+  color: #F3F7F0;
+  background-color: #375DE6;
+  border-radius: 14px;
+  position: absolute;
+  right: -40px;
+  top: -20px;
+}
+.home-cont a {
+  margin-top: 15px;
+}
+
+.home-title-cont {
+  position: relative;
+  display: inline-block;
+}
+
+.home-title {
+  display: inline-block;
+  height: 125px;
+  line-height: 125px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 10em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

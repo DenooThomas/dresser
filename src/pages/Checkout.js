@@ -25,6 +25,10 @@ export default function Checkout(){
         <div className={isSubmitted ? "checkout-cont submitted" : "checkout-cont"}>
         {!isSubmitted ?
         <React.Fragment>
+            <div className="checkout-card-cont">
+                <ClothingCardGen cardType="checkout"/>
+                <h2 className="totalPrice">Total: ${totalPrice}</h2>
+            </div> 
             <form onSubmit={handleSubmit} className="form-cont">
                 <label htmlFor="firstName">First name:</label>
                 <input
@@ -55,10 +59,6 @@ export default function Checkout(){
                     <input className="checkout-button" type="submit" value={isSubmitting ? "Sending order..." : "Confirm order"}/>
                 </div>  
             </form>
-            <div className="checkout-card-cont">
-                <ClothingCardGen cardType="checkout"/>
-                <h2 className="totalPrice">Total: ${totalPrice}</h2>
-            </div> 
             </React.Fragment>
             :
             <React.Fragment>

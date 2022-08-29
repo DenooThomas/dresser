@@ -106,8 +106,9 @@ function ClothingContextProvider(props){
             })
             return null
         })
-        return totalPrice
+        return totalPrice.toFixed(2)
     }
+
         
     return (
         <ClothingContext.Provider value={{

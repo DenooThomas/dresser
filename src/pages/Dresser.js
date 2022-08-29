@@ -1,14 +1,13 @@
 import { useContext } from "react"
 import { Link } from "react-router-dom"
 
-import Person from "../components/Person"
 import "./dresserStyling/dresserStyling.css"
 import ClothingCardGen from "../components/ClothingCardGen"
 import { ClothingContext } from "../context/ClothingContext"
 
 
 export default function Dresser(){ 
-    const {isSelected} = useContext(ClothingContext)
+    const {isSelected, person} = useContext(ClothingContext)
 
     
 
@@ -23,7 +22,15 @@ export default function Dresser(){
                 <ClothingCardGen cardType="dresser" category="shoes"/>
             </div>
             <div className="person-cont">
-                <Person />
+                <div className="person-option-cont upperBody">
+                    {person.upperbody.img.length > 0 && <img src={person.upperbody.img} alt="person clothing" className="person-img" />}
+                </div>
+                <div className="person-option-cont lowerBody">
+                    {person.lowerbody.img.length > 0 && <img src={person.lowerbody.img} alt="person clothing" className="person-img" />}
+                </div>
+                <div className="person-option-cont shoes">
+                    {person.shoes.img.length > 0 && <img src={person.shoes.img} alt="person clothing" className="person-img" />}
+                </div>
                 {isSelected() && <Link to="confirmation" className="confirm-button">Confirm selection</Link>}
             </div>
         </div>

@@ -1,4 +1,5 @@
 @import "../../partials/colors";
+@import "../../partials/shadows";
 
 .dresser-cont {
     width: 100%;
@@ -16,6 +17,34 @@
 
 .selector-title {
     padding: 10px 10px 10px 0;
+}
+
+.person-cont {
+    width: 30%;
+    height: 75vh;
+    padding: 20px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $grey;
+    border-radius: 8px;
+    @include simpleShadow;
+}
+
+.person-option-cont {
+    width: 150px;
+    height: 150x;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-img {
+    height: 150px;
+    object-fit: cover;
 }
 
 
