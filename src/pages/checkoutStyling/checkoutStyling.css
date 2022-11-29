@@ -62,6 +62,7 @@
   box-sizing: content-box;
   transition: all 0.2s ease-out;
   font-weight: 400;
+  cursor: pointer;
   margin-top: 20px;
   padding: 20px 30px;
 }
